@@ -2,5 +2,14 @@ collection: settings
 slug: global
 navigationTitle: Wildtiere in Deutschland
 siteUrl: gatsby-netlifycms.tortuga-webdesign.de
-favicon: ../media/logo-oks.png
-logo: ../media/logo-oks.png
+favicon: ../media/metincalis-favicon.png
+logo: ../media/metincalis.png
+code: ""
+provenExpert: >-
+  <!-- ProvenExpert Bewertungssiegel -->
+
+
+  <a  href="https://www.provenexpert.com/metin-calis-finanzen-immobilien/?utm_source=Widget&amp;utm_medium=Widget&amp;utm_campaign=Widget" title="Kundenbewertungen &amp; Erfahrungen zu Metin Calis - Finanzen & Immobilien. Mehr Infos anzeigen." target="_blank" style="text-decoration:none;"><img src="https://images.provenexpert.com/96/9d/d20e17b8af9097d43c5ff95cdb10/widget_square_180_de_0.png" alt="Erfahrungen &amp; Bewertungen zu Metin Calis - Finanzen & Immobilien" width="180" height="180" style="border:0" /></a>
+
+
+  <!-- ProvenExpert Bewertungssiegel -->

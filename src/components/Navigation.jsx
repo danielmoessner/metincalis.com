@@ -11,7 +11,7 @@ function Navigation() {
       settingsYaml(slug: { eq: "global" }) {
         logo {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, width: 320)
+            gatsbyImageData(layout: CONSTRAINED, width: 320, placeholder: NONE)
           }
         }
       }

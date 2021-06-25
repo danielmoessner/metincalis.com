@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Container from '../components/Container';
 import Seo from '../components/Seo';
 
-export default function error() {
+export default function Page() {
   const meta = {
     title: '404',
     description: '404 Error',

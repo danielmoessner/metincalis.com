@@ -196,13 +196,6 @@ export const query = graphql`
       meta {
         title
         description
-        image {
-          childImageSharp {
-            resize(width: 1200) {
-              src
-            }
-          }
-        }
       }
       header {
         text

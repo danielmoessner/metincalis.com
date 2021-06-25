@@ -184,7 +184,7 @@ function Page({ data }) {
                   <button
                     type="submit"
                     onClick={(event) => event.preventDefault()}
-                    className="baufilead_konditionsrechner w-1/5 self-end ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                    className="baufilead_konditionsrechner lg:w-1/5 self-end ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
                   >
                     {page.form.button}
                   </button>
@@ -350,13 +350,6 @@ export const query = graphql`
       meta {
         title
         description
-        image {
-          childImageSharp {
-            resize(width: 1200) {
-              src
-            }
-          }
-        }
       }
       header {
         title

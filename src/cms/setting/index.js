@@ -35,6 +35,12 @@ export default {
           name: 'logo',
           widget: 'image',
         },
+        {
+          label: 'Proven Expert',
+          name: 'provenExpert',
+          widget: 'text',
+          required: false,
+        },
       ],
     },
     {
