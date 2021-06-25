@@ -4,7 +4,7 @@ slug: ratenkredit
 title: Ratenkredit
 category: Angebot
 order: 2
-icon: <svg class="flex-shrink-0 h-6 w-6 text-yellow-600"
+icon: <svg class="flex-shrink-0 h-6 w-6 text-blue-600"
   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
   stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round"
   stroke-width="2" d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242

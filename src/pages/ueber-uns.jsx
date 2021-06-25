@@ -55,8 +55,12 @@ function Page({ data }) {
               </dl>
             </div>
           </div>
-          <div className="bg-gradient-to-r from-yellow-600 to-yellow-400 py-16 px-4 sm:py-24 sm:px-6 lg:bg-none lg:flex lg:items-center lg:justify-end lg:px-0 lg:pl-8">
-            <GatsbyImage image={page.about.image.childImageSharp.gatsbyImageData} alt="Über uns" />
+          <div className="bg-gradient-to-r from-blue-900 to-blue-800 py-16 px-4 sm:py-24 sm:px-6 lg:bg-none lg:flex lg:items-center lg:justify-end lg:px-0 lg:pl-8">
+            <GatsbyImage
+              className="filter invert"
+              image={page.about.image.childImageSharp.gatsbyImageData}
+              alt="Über uns"
+            />
           </div>
         </div>
       </div>

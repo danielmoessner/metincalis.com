@@ -102,6 +102,11 @@ export default {
           widget: 'string',
         },
         {
+          label: 'Mobil',
+          name: 'mobile',
+          widget: 'string',
+        },
+        {
           label: 'E-Mail',
           name: 'email',
           widget: 'string',

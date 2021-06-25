@@ -42,14 +42,14 @@ function Page({ data }) {
       <Seo meta={page.meta} />
       <Header title={page.header.title} text={page.header.text} />
       <section className="relative bg-gray-100">
-        <div className="absolute w-full overflow-hidden h-1/2 bg-gray-050" aria-hidden="true" />
+        <div className="absolute w-full overflow-hidden h-1/2 bg-gray-50" aria-hidden="true" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Pattern />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative shadow-xl">
             <div className="grid grid-cols-1 lg:grid-cols-3 rounded overflow-hidden">
-              <div className="relative overflow-hidden py-10 px-6 bg-yellow-700 sm:px-10 xl:p-12">
+              <div className="relative overflow-hidden py-10 px-6 bg-blue-800 sm:px-10 xl:p-12">
                 <div
                   className="hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none lg:block"
                   aria-hidden="true"
@@ -91,7 +91,7 @@ function Page({ data }) {
                   </dt>
                   <dd className="flex text-base text-white">
                     <svg
-                      className="flex-shrink-0 w-6 h-6 text-yellow-900"
+                      className="flex-shrink-0 w-6 h-6 text-blue-200"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -105,14 +105,39 @@ function Page({ data }) {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
-                    <span className="ml-3">{contact.phone}</span>
+                    <span className="ml-3">
+                      <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+                    </span>
+                  </dd>
+                  <dt>
+                    <span className="sr-only">Mobil</span>
+                  </dt>
+                  <dd className="flex text-base text-white">
+                    <svg
+                      className="flex-shrink-0 w-6 h-6 text-blue-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                    <span className="ml-3">
+                      <a href={`tel:${contact.mobile}`}>{contact.mobile}</a>
+                    </span>
                   </dd>
                   <dt>
                     <span className="sr-only">E-Mail</span>
                   </dt>
                   <dd className="flex text-base text-white">
                     <svg
-                      className="flex-shrink-0 w-6 h-6 text-yellow-900"
+                      className="flex-shrink-0 w-6 h-6 text-blue-200"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -126,14 +151,16 @@ function Page({ data }) {
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
-                    <span className="ml-3">{contact.email}</span>
+                    <span className="ml-3">
+                      <a href={`mailto:${contact.email}`}>{contact.email}</a>
+                    </span>
                   </dd>
                   <dt>
                     <span className="sr-only">Adresse</span>
                   </dt>
                   <dd className="flex text-base text-white">
                     <svg
-                      className="flex-shrink-0 w-6 h-6 text-yellow-900"
+                      className="flex-shrink-0 w-6 h-6 text-blue-200"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -211,6 +238,7 @@ export const query = graphql`
       email
       phone
       address
+      mobile
     }
   }
 `;

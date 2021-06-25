@@ -20,7 +20,7 @@ function Layout({ children, overflowHidden }) {
       <main className={overflowHidden ? 'overflow-hidden' : ''}>{children}</main>
       <Footer />
       <div
-        className="fixed bottom-10 z-40 right-2 shadow-xl border-yellow-600 border-2"
+        className="fixed bottom-10 z-40 right-2 shadow-xl border-blue-600 border-2"
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: global.provenExpert }}
       />

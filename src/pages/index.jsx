@@ -92,7 +92,7 @@ function Page({ data }) {
   return (
     <Layout>
       <Seo meta={page.meta} />
-      <header className="bg-gray-050">
+      <header className="bg-gray-50">
         <div className="relative overflow-hidden pt-16">
           <Patterns />
           <div className="pb-16 sm:pb-24 relative">
@@ -100,7 +100,7 @@ function Page({ data }) {
               <div className="text-center">
                 <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                   <span className="block">{page.header.title}</span>
-                  <span className="block text-yellow-600">{page.header.titleColor}</span>
+                  <span className="block text-blue-600">{page.header.titleColor}</span>
                 </h1>
                 <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
                   {page.header.text}
@@ -125,7 +125,7 @@ function Page({ data }) {
                       <select
                         id="grund"
                         defaultValue="KAUF"
-                        className="baufilead_finanzierungszweck text-gray-700 mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm rounded-md"
+                        className="baufilead_finanzierungszweck text-gray-700 mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                       >
                         <option value="KAUF">Immobilienkauf</option>
                         <option value="BAU">Bauvorhaben</option>
@@ -142,7 +142,7 @@ function Page({ data }) {
                           type="number"
                           id="summe"
                           step="10000"
-                          className="baufilead_darlehenssumme placeholder-gray-300 text-gray-700 focus:ring-yellow-500 focus:border-yellow-500 block w-full pr-12 sm:text-sm border-gray-300 rounded-md"
+                          className="baufilead_darlehenssumme placeholder-gray-300 text-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full pr-12 sm:text-sm border-gray-300 rounded-md"
                           placeholder="200000"
                         />
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -159,7 +159,7 @@ function Page({ data }) {
                           type="number"
                           id="kosten"
                           step="10000"
-                          className="baufilead_anschaffungskosten text-gray-700 placeholder-gray-300 focus:ring-yellow-500 focus:border-yellow-500 block w-full pr-12 sm:text-sm border-gray-300 rounded-md"
+                          className="baufilead_anschaffungskosten text-gray-700 placeholder-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-full pr-12 sm:text-sm border-gray-300 rounded-md"
                           placeholder="100000"
                         />
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -175,7 +175,7 @@ function Page({ data }) {
                         <input
                           type="number"
                           id="ort"
-                          className="baufilead_postleitzahl shadow-sm placeholder-gray-300 focus:ring-yellow-500 focus:border-yellow-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                          className="baufilead_postleitzahl shadow-sm placeholder-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
                           placeholder="90933"
                         />
                       </div>
@@ -184,7 +184,7 @@ function Page({ data }) {
                   <button
                     type="submit"
                     onClick={(event) => event.preventDefault()}
-                    className="baufilead_konditionsrechner lg:w-1/5 self-end ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                    className="baufilead_konditionsrechner lg:w-1/5 self-end ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                   >
                     {page.form.button}
                   </button>
@@ -197,6 +197,7 @@ function Page({ data }) {
           <div className="max-w-7xl mx-auto py-16 px-4 sm:py-16 sm:px-6 lg:px-8" />
         </div>
       </header>
+
       <section>
         <div className="bg-white">
           <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
@@ -278,26 +279,28 @@ function Page({ data }) {
         </div>
       </section>
 
-      <section>
-        <div className="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-          <div className="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
-            <div>
-              <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-                {page.articles.title}
-              </h2>
-              <div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center">
-                <p className="text-xl text-gray-500">{page.articles.text}</p>
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="pt-16 pb-20 lg:pt-24 lg:pb-28">
+            <div className="relative divide-y-2 divide-gray-200 lg:max-w-7xl">
+              <div>
+                <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+                  {page.articles.title}
+                </h2>
+                <div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center">
+                  <p className="text-xl text-gray-500">{page.articles.text}</p>
+                </div>
               </div>
-            </div>
-            <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
-              {articles.map((article) => (
-                <ArticleItem
-                  key={article.slug}
-                  article={article}
-                  link={`/ratgeber/${article.slug}/`}
-                  button={page.articles.button}
-                />
-              ))}
+              <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+                {articles.map((article) => (
+                  <ArticleItem
+                    key={article.slug}
+                    article={article}
+                    link={`/ratgeber/${article.slug}/`}
+                    button={page.articles.button}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -307,14 +310,14 @@ function Page({ data }) {
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
             <h2 className="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
               <span className="block">{page.cta.textTop}</span>
-              <span className="block text-yellow-600">{page.cta.textBottom}</span>
+              <span className="block text-blue-200">{page.cta.textBottom}</span>
             </h2>
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div className="inline-flex rounded-md shadow" />
               <div className="ml-3 inline-flex rounded-md shadow">
                 <button
                   type="button"
-                  className="baufilead_konditionsrechner inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-yellow-600 ring-offset-gray-800 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                  className="baufilead_konditionsrechner inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 ring-offset-gray-800 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                 >
                   {page.cta.button}
                 </button>

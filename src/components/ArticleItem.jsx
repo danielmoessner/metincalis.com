@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 
 function Component({ article, button, link }) {
   return (
-    <div>
+    <div className="max-w-2xl">
       <Link to={link} className="mt-2 block">
         <h2 className="text-xl font-semibold text-gray-900">{article.title}</h2>
         <p className="mt-3 text-base text-gray-500">{article.description}</p>

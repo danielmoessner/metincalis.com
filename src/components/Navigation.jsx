@@ -49,19 +49,21 @@ function Navigation() {
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 top-0 left-0 right-0 w-full absolute z-50">
-            <div className="relative flex items-center justify-between sm:h-10 md:justify-center">
-              <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-                <div className="flex items-center justify-between w-full md:w-auto">
+            <div className="relative flex items-center justify-between sm:h-10 lg:justify-center">
+              <div className="flex items-center flex-1 lg:absolute lg:inset-y-0 lg:left-0">
+                <div className="flex items-center justify-between w-full lg:w-auto">
                   <Link className="block" to="/">
                     <GatsbyImage
-                      className="w-20 h-auto sm:w-40"
+                      className="w-auto h-8 sm:h-auto sm:w-40"
+                      objectFit="contain"
+                      objectPosition="0% 50%"
                       image={data.settingsYaml.logo.childImageSharp.gatsbyImageData}
                       alt="Logo"
                     />
                   </Link>
-                  <div className="-mr-2 flex items-center md:hidden">
+                  <div className="-mr-2 flex items-center lg:hidden">
                     <Popover.Button
-                      className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500"
+                      className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
                       aria-expanded="false"
                     >
                       <span className="sr-only">Menü öffnen</span>
@@ -70,13 +72,13 @@ function Navigation() {
                   </div>
                 </div>
               </div>
-              <Popover.Group className="hidden md:flex md:space-x-10">
+              <Popover.Group className="hidden lg:flex lg:space-x-10">
                 <Popover className="relative">
                   {({ open }) => (
                     <>
                       <Popover.Button
                         type="button"
-                        className={`group rounded-md inline-flex items-center text-base font-medium ring-offset-gray-050 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 ${
+                        className={`group rounded-md inline-flex items-center text-base font-medium ring-offset-gray-050 hover:text-gray-900 focus:outline-none ${
                           open ? 'text-gray-900' : 'text-gray-500'
                         }`}
                         aria-expanded="false"
@@ -112,7 +114,7 @@ function Navigation() {
                                   className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                                 >
                                   <div
-                                    className="flex-shrink-0 text-yellow-600 w-6 h-6"
+                                    className="flex-shrink-0 text-blue-600 w-6 h-6"
                                     // eslint-disable-next-line react/no-danger
                                     dangerouslySetInnerHTML={{ __html: service.icon }}
                                   />
@@ -145,7 +147,7 @@ function Navigation() {
                     <>
                       <Popover.Button
                         type="button"
-                        className={`group rounded-md inline-flex items-center text-base font-medium ring-offset-gray-050 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 ${
+                        className={`group rounded-md inline-flex items-center text-base font-medium ring-offset-gray-050 hover:text-gray-900 focus:outline-none ${
                           open ? 'text-gray-900' : 'text-gray-500'
                         }`}
                         aria-expanded="false"
@@ -210,7 +212,7 @@ function Navigation() {
             leaveTo="opacity-0 scale-95"
           >
             <Popover.Panel
-              className="z-50 absolute top-0 inset-x-0 p-2 transition-all transform origin-top-right md:hidden"
+              className="z-50 absolute top-0 inset-x-0 p-2 transition-all transform origin-top-right lg:hidden"
               static
               focus
             >
@@ -224,7 +226,7 @@ function Navigation() {
                     />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
+                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                       <span className="sr-only">Menü schließen</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
