@@ -1,0 +1,68 @@
+collection: page
+slug: home
+meta:
+  description: Online Kreditshop Beschreibung
+  title: Online Kreditshop
+  image: ""
+header:
+  title: Wir finden den für Sie
+  titleColor: passenden Kredit
+  text: Wir helfen Ihnen bei der Baufinanzierung, sowie mit persönlichen
+    Ratenkrediten.
+form:
+  title: "Baufinanzierungskredit suchen:"
+  label1: Finanzierungsgrund
+  label2: Darlehenssumme
+  label3: Kosten der Immobilie
+  label4: PLZ der Immobilie
+  button: Suchen
+  subtext: Bereits mehr als 2344 Bauvorhaben finanziert.
+offer:
+  financingTitle: Finanzierung ohne Eigenkapital
+  financingText: Baufinanzierungen auch ohne Eigenkapital.
+  loanTitle: Ratenkredit
+  mortgageText: Baufinanzierungsvergleich aus über 800 Banken deutschlandweit.
+    Online Konditionen mit persönlicher Beratung.
+  aboutTitle: Über uns
+  text: Baufinanzierungskredite, Ratenkredite und Finanzierung ohne Eigenkapital
+  button: Mehr erfahren
+  offers:
+    - title: Baufinanzierung
+      text: Baufinanzierungsvergleich aus über 800 Banken deutschlandweit. Online
+        Konditionen mit persönlicher Beratung.
+      link: /angebot/baufinanzierung/
+    - title: Ratenkredit
+      text: Kreditvergleich in Zusammenarbeit mit Check24. Auf Wunsch mit persönlicher
+        Beratung.
+      link: /angebot/ratenkredit/
+    - title: Finanzierung ohne Eigenkapital
+      text: Baufinanzierungen auch ohne Eigenkapital.
+      link: /angebot/finanzierung-ohne-eigenkapital/
+    - text: 17 Jahre Erfahrung im Bereich der Finanzierungen.
+      title: Über uns
+      link: /ueber-uns/
+  title: Unser Angebot für Sie
+  aboutText: k
+  mortgageTitle: Baufinanzierung
+  loanText: Kreditvergleich in Zusammenarbeit mit Check24. Auf Wunsch mit
+    persönlicher Beratung.
+plan:
+  steps:
+    - title: 1. Kontakt
+      text: Kontakt aufnehmen oder Rechnerformular ausfüllen.
+    - title: 2. Analyse
+      text: Wir analysieren zusammen Ihre Situation und finden die für Sie am besten
+        passenden Kredite.
+    - title: 3. Kredit
+      text: Wir kümmern uns um den Papierkram und Sie bekommen Ihren Kredit.
+  title: Die Schritte zu Ihrem Kredit
+  text: Wie kommen Sie zu Ihrem Wunschkredit?
+articles:
+  text: Unser Ratgeber hilft Ihnen mit Artikeln zur Immobilienfinazierung und
+    Anschlussfinanzierung.
+  title: Ratgeber
+  button: Ratgeber lesen
+cta:
+  textTop: Bereit?
+  textBottom: Jetzt Baufinanzierungskredite suchen.
+  button: Rechner öffnen
