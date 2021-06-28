@@ -57,7 +57,7 @@ function Page({ data }) {
           </div>
           <div className="bg-gradient-to-r from-blue-900 to-blue-800 py-16 px-4 sm:py-24 sm:px-6 lg:bg-none lg:flex lg:items-center lg:justify-end lg:px-0 lg:pl-8">
             <GatsbyImage
-              className="filter invert"
+              className="filter invert lg:invert-0"
               image={page.about.image.childImageSharp.gatsbyImageData}
               alt="Über uns"
             />
