@@ -2,21 +2,21 @@ collection: page
 slug: about
 meta:
   title: Über uns
-  description: Seit über 16 Jahren vermitteln wir für Sie Baufinanzierungen und
+  description: Seit 2005 vermitteln wir für Sie Baufinanzierungen und
     Konsumentenkredite zur Onlinekonditionen mit persönlicher Beratung. Erfahren
     Sie jetzt mehr auf unserer Über uns Seite.
   image: ""
 header:
   title: Über uns
-  text: Seit über 16 Jahren vermitteln wir für Sie Baufinanzierungen und
+  text: Seit 2005 vermitteln wir für Sie Baufinanzierungen und
     Konsumentenkredite zu Onlinekonditionen mit persönlicher Beratung.
 about:
   pretitle: Ihr Partner in München
   title: Wir bieten Baufinanzierung und Ratenkredite
   image: ../media/metincalis.png
   advantages:
-    - title: Seit 16 Jahren am Markt
-      text: Seit über 16 Jahren vermitteln wir für Sie Baufinanzierungen und
+    - title: Seit 2005 am Markt
+      text: Seit 2005 vermitteln wir für Sie Baufinanzierungen und
         Konsumentenkredite.
     - title: Persönliche Beratung
       text: Bei uns bekommen Sie die persönliche Beratung die Sie sich wünschen.
