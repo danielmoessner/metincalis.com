@@ -116,8 +116,8 @@ function Page({ data }) {
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">
                   {page.form.title}
                 </h2>
-                <baufi-passt-flex frontend-key-id="37d3f6c6a9815184033575ff2677e112ec17ebd03438719b7277840869743a51" datenkontext="TEST_MODUS" ></baufi-passt-flex>
-                <form className="flex-col hidden mt-8 space-y-6  lg:flex-row lg:flex-nowrap lg:space-x-4 lg:space-y-0">
+                <baufi-passt-flex frontend-key-id="37d3f6c6a9815184033575ff2677e112ec17ebd03438719b7277840869743a51" datenkontext="ECHT_GESCHAEFT"></baufi-passt-flex>
+                <form className="flex-col hidden mt-8 space-y-6 lg:flex-row lg:flex-nowrap lg:space-x-4 lg:space-y-0">
                   <div className="lg:w-1/5">
                     <label htmlFor="grund" className="block text-sm font-medium text-gray-700">
                       {page.form.label1}
