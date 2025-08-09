@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: 'https://online-kreditshop.de',
   },
   plugins: [
-    'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
