@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-// import Helmet from 'react-helmet';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import PrimaryButtonB from '../components/PrimaryButtonB';
@@ -31,15 +30,15 @@ function Page({ data }) {
   return (
     <Layout>
       <Seo meta={meta} />
-      <div className="bg-white overflow-hidden pt-20" style={{ minHeight: '70vh' }}>
-        <div className="relative max-w-7xl mx-auto pt-16 pb-24 px-4 sm:px-6 lg:px-8">
-          <div className="hidden lg:block bg-gray-50 fixed z-0 top-0 bottom-0 left-3/4 w-screen" />
+      <div className="pt-20 overflow-hidden bg-white" style={{ minHeight: '70vh' }}>
+        <div className="relative px-4 pt-16 pb-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="fixed top-0 bottom-0 z-0 hidden w-screen lg:block bg-gray-50 left-3/4" />
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
-              <h2 className="text-base text-blue-800 font-semibold tracking-wide uppercase">
+              <h2 className="text-base font-semibold tracking-wide text-blue-800 uppercase">
                 {calculator.category}
               </h2>
-              <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              <h1 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                 {calculator.title}
               </h1>
             </div>
@@ -47,7 +46,7 @@ function Page({ data }) {
           <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
             <div className="relative lg:row-start-1 lg:col-start-2">
               <svg
-                className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
+                className="absolute top-0 right-0 hidden -mt-20 -mr-20 lg:block"
                 width="404"
                 height="384"
                 fill="none"
@@ -77,8 +76,8 @@ function Page({ data }) {
               </svg>
             </div>
             <div className="mt-8 lg:mt-0">
-              <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                <p className="text-lg text-gray-500 mb-5">{calculator.description}</p>
+              <div className="mx-auto text-base max-w-prose lg:max-w-none">
+                <p className="mb-5 text-lg text-gray-500">{calculator.description}</p>
                 <PrimaryButtonB
                   extraClass={`${calculator.calculator}`}
                   styleClass="ring-offset-white"
@@ -86,7 +85,7 @@ function Page({ data }) {
                   <div>{calculator.title} öffnen</div>
                 </PrimaryButtonB>
               </div>
-              <div className="mt-5 prose prose-blue text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1" />
+              <div className="mx-auto mt-5 prose text-gray-500 prose-blue lg:max-w-none lg:row-start-1 lg:col-start-1" />
             </div>
           </div>
         </div>

@@ -74,19 +74,6 @@ function Page({ data }) {
   const page = data.pagesYaml;
   const articles = data.allMarkdownRemark.nodes.map((node) => node.frontmatter);
 
-  useEffect(() => {
-    // eslint-disable-next-line
-    const doc = document
-    if (doc.getElementById('baufi-lead-script')) {
-      doc.getElementById('baufi-lead-script').remove();
-    }
-    const script = doc.createElement('script');
-    script.id = 'baufi-lead-script';
-    script.src = 'https://baufi-passt.passt.aws.europace.de/baufi-passt-flex/baufi-passt-flex.js';
-    script.defer = true;
-    doc.body.append(script);
-  }, []);
-
   return (
     <Layout>
       <Seo meta={page.meta} />
@@ -114,33 +101,34 @@ function Page({ data }) {
             <div className="px-4 mx-auto max-w-7xl sm:px-6">
               <div className="relative px-8 pt-6 pb-8 bg-white rounded-lg shadow-lg">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                  {page.form.title}
+                  Immobilienfinanzierung:
                 </h2>
-                <baufi-passt-flex frontend-key-id="37d3f6c6a9815184033575ff2677e112ec17ebd03438719b7277840869743a51" datenkontext="ECHT_GESCHAEFT"></baufi-passt-flex>
-                <form className="flex-col hidden mt-8 space-y-6 lg:flex-row lg:flex-nowrap lg:space-x-4 lg:space-y-0">
-                  <div className="lg:w-1/5">
+                <form className="flex flex-col mt-8 space-y-6 lg:flex-row lg:flex-nowrap lg:space-x-4 lg:space-y-0" method="get" action="/rechner/immobilienkauf/">
+                  <div className="lg:w-1/4">
                     <label htmlFor="grund" className="block text-sm font-medium text-gray-700">
-                      {page.form.label1}
+                      Objektart
                       <select
                         id="grund"
-                        defaultValue="KAUF"
+                        defaultValue="EINFAMILIENHAUS"
+                        name="objektart"
                         className="block w-full py-2 pl-3 pr-10 mt-1 text-base text-gray-700 border-gray-300 rounded-md baufilead_finanzierungszweck focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                       >
-                        <option value="KAUF">Immobilienkauf</option>
-                        <option value="BAU">Bauvorhaben</option>
-                        <option value="MODERNISIERUNG">Modernisierung</option>
-                        <option value="UMSCHULDUNG">Umschuldung</option>
+                        <option value="EINFAMILIENHAUS">Einfamilienhaus</option>
+                        <option value="EIGENTUMSWOHNUNG">Eigentumswohnung</option>
+                        <option value="MEHRFAMILIENHAUS">Mehrfamilienhaus</option>
+                        <option value="DOPPELHAUSHAELFTE">Doppelhaushälfte</option>
                       </select>
                     </label>
                   </div>
-                  <div className="lg:w-1/5">
+                  <div className="lg:w-1/4">
                     <label htmlFor="summe" className="block text-sm font-medium text-gray-700">
-                      {page.form.label2}
+                      Kaufpreis (ohne Nebenkosten)
                       <div className="relative mt-1 rounded-md shadow-sm">
                         <input
                           type="number"
                           id="summe"
                           step="10000"
+                          name="kaufpreis"
                           className="block w-full pr-12 text-gray-700 placeholder-gray-300 border-gray-300 rounded-md baufilead_darlehenssumme focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                           placeholder="200000"
                         />
@@ -150,42 +138,25 @@ function Page({ data }) {
                       </div>
                     </label>
                   </div>
-                  <div className="lg:w-1/5">
-                    <label htmlFor="kosten" className="block text-sm font-medium text-gray-700">
-                      {page.form.label3}
-                      <div className="relative mt-1 rounded-md shadow-sm">
-                        <input
-                          type="number"
-                          id="kosten"
-                          step="10000"
-                          className="block w-full pr-12 text-gray-700 placeholder-gray-300 border-gray-300 rounded-md baufilead_anschaffungskosten focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                          placeholder="100000"
-                        />
-                        <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                          <span className="text-gray-500 sm:text-sm">€</span>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                  <div className="lg:w-1/5">
+                  <div className="lg:w-1/4">
                     <label htmlFor="ort" className="block text-sm font-medium text-gray-700">
-                      {page.form.label4}
+                      Postleitzahl / Ort
                       <div className="mt-1">
                         <input
                           type="number"
                           id="ort"
+                          name="plz"
                           className="block w-full placeholder-gray-300 border-gray-300 rounded-md shadow-sm baufilead_postleitzahl focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                          placeholder="90933"
+                          placeholder="80993"
                         />
                       </div>
                     </label>
                   </div>
                   <button
                     type="submit"
-                    onClick={(event) => event.preventDefault()}
                     className="inline-flex self-end justify-center px-4 py-2 ml-3 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm baufilead_konditionsrechner lg:w-1/5 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                   >
-                    {page.form.button}
+                    Berechnen
                   </button>
                 </form>
               </div>

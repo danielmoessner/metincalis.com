@@ -27,9 +27,18 @@ description: "Welche Unterlagen benötigen Sie bei einer
 
 ### Objektunterlagen
 
-* Bauplansatz
-* Fotos des Objektes
-* Teilungserklärung beim Kauf einer Eigentumswohnung
+* Aktueller Grundbuchauszug (nicht älter als 3 Monate)
+* Falls vorhanden Kaufvertragsentwurf
+* Teilungserklärung inklusive aller evtl. vorhandenen Nachträge und Anlagen bei Wohnungen
+* Aufteilungsplan Wohnung / Garage
+* Amtlicher Lageplan / Flurkarte
+* Wohnflächenberechnung
+* Bemaßte Grundrisse
+* Ansichten / Schnitte bei Häusern
+* Exposé falls vorhanden Bau oder Objektbeschreibung
+* Lichtbilder (Innen und Außen)
+* Energieausweis
+* Wohngebäudeversicherung
 
 ### Weiter Unterlagen
 
