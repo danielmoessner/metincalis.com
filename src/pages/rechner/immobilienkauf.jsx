@@ -84,7 +84,7 @@ function Page() {
                  </svg>
                </div>
                  <div className="mt-8 lg:col-span-2">
-                   <baufi-passt-flex frontend-key-id="37d3f6c6a9815184033575ff2677e112ec17ebd03438719b7277840869743a51" datenkontext="TEST_MODUS"></baufi-passt-flex>
+                   <baufi-passt-flex frontend-key-id="37d3f6c6a9815184033575ff2677e112ec17ebd03438719b7277840869743a51" datenkontext="ECHT_GESCHAFT"></baufi-passt-flex>
                  </div>
              </div>
            </div>
