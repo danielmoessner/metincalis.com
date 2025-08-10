@@ -115,8 +115,8 @@ function Page({ data }) {
                       >
                         <option value="EINFAMILIENHAUS">Einfamilienhaus</option>
                         <option value="EIGENTUMSWOHNUNG">Eigentumswohnung</option>
-                        <option value="MEHRFAMILIENHAUS">Mehrfamilienhaus</option>
                         <option value="DOPPELHAUSHAELFTE">Doppelhaushälfte</option>
+                        <option value="MEHRFAMILIENHAUS">Mehrfamilienhaus</option>
                       </select>
                     </label>
                   </div>
