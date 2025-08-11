@@ -23,14 +23,14 @@ offer:
   financingTitle: Finanzierung ohne Eigenkapital
   financingText: Baufinanzierungen auch ohne Eigenkapital.
   loanTitle: Ratenkredit
-  mortgageText: Baufinanzierungsvergleich aus über 800 Banken deutschlandweit.
+  mortgageText: Baufinanzierungsvergleich aus über 600 Banken deutschlandweit.
     Online Konditionen mit persönlicher Beratung.
   aboutTitle: Über uns
   text: Baufinanzierungskredite, Ratenkredite und Finanzierung ohne Eigenkapital
   button: Mehr erfahren
   offers:
     - title: Baufinanzierung
-      text: Baufinanzierungsvergleich aus über 800 Banken deutschlandweit. Online
+      text: Baufinanzierungsvergleich aus über 600 Banken deutschlandweit. Online
         Konditionen mit persönlicher Beratung.
       link: /angebot/baufinanzierung/
     - title: Ratenkredit
@@ -40,7 +40,7 @@ offer:
     - title: Finanzierung ohne Eigenkapital
       text: Baufinanzierungen auch ohne Eigenkapital.
       link: /angebot/finanzierung-ohne-eigenkapital/
-    - text: 17 Jahre Erfahrung im Bereich der Finanzierungen.
+    - text: Seit 2005 vermitteln wir für Sie Baufinanzierungen und Konsumentenkredite zu Onlinekonditionen mit persönlicher Beratung.
       title: Über uns
       link: /ueber-uns/
   title: Unser Angebot für Sie
