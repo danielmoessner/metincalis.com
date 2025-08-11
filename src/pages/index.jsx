@@ -105,6 +105,7 @@ function Page({ data }) {
                 </h2>
                 <form className="flex flex-col mt-8 space-y-6 lg:flex-row lg:flex-nowrap lg:space-x-4 lg:space-y-0" method="get" action="/rechner/immobilienkauf/">
                   <div className="lg:w-1/4">
+                    <input type="hidden" name="wohnflaeche" />
                     <label htmlFor="grund" className="block text-sm font-medium text-gray-700">
                       Objektart
                       <select
