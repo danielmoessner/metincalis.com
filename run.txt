@@ -1,0 +1,5 @@
+in order to run this project
+
+nvm use v12.18.0
+npm i
+npm run gatsby
