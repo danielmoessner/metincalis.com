@@ -164,7 +164,7 @@ function Page({ data }) {
                   Suchauftrag:
                 </h2>
                 <p className='block mt-2 text-sm font-medium text-gray-700'>
-                  Sie können hier auch einen Suchauftrag anlegen, damit Sie sofort informiert werden, wenn eine passende Immobilie in Ihrer Wunschregion verfügbar ist.
+                  Sie können hier auch einen Suchauftrag anlegen, damit Sie sofort informiert werden, wenn eine passende Immobilie in Ihrer Wunschregion verfügbar ist. Mit einem kostenlosen Suchauftrag über 50 Immobilienportale checken.
                 </p>
                 <div className="mt-4">
                  <a
