@@ -5,14 +5,14 @@ meta:
     Privatkreditvergleich aus über 100 Banken deutschlandweit. Wir vermitteln
     für Sie den günstigsten Privatkredit & die beste Baufinanzierung.
   title: Metin Calis - Finanzen & Immobilien
-  image: ""
+  image: ''
 header:
   title: Wir finden den für Sie
   titleColor: passenden Kredit
   text: Wir helfen Ihnen bei der Baufinanzierung, sowie mit persönlichen
     Ratenkrediten.
 form:
-  title: "Baufinanzierungskredit suchen:"
+  title: 'Baufinanzierungskredit suchen:'
   label1: Finanzierungsgrund
   label2: Darlehenssumme
   label3: Kosten der Immobilie
@@ -67,4 +67,4 @@ articles:
 cta:
   textTop: Bereit?
   textBottom: Jetzt Baufinanzierungskredite suchen.
-  button: Rechner öffnen
+  button: Zum Kontakt

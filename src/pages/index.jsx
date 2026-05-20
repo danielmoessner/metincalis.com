@@ -103,7 +103,11 @@ function Page({ data }) {
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">
                   Immobilienfinanzierung:
                 </h2>
-                <form className="flex flex-col mt-8 space-y-6 lg:flex-row lg:flex-nowrap lg:space-x-4 lg:space-y-0" method="get" action="/rechner/immobilienkauf/">
+                <form
+                  className="flex flex-col mt-8 space-y-6 lg:flex-row lg:flex-nowrap lg:space-x-4 lg:space-y-0"
+                  method="get"
+                  action="/rechner/immobilienkauf/"
+                >
                   <div className="lg:w-1/4">
                     <input type="hidden" name="wohnflaeche" />
                     <label htmlFor="grund" className="block text-sm font-medium text-gray-700">
@@ -160,14 +164,16 @@ function Page({ data }) {
                     Berechnen
                   </button>
                 </form>
-                 <h2 className="mt-8 text-xl font-bold tracking-tight text-gray-900">
+                <h2 className="mt-8 text-xl font-bold tracking-tight text-gray-900">
                   Suchauftrag:
                 </h2>
-                <p className='block mt-2 text-sm font-medium text-gray-700'>
-                  Sie können hier auch einen Suchauftrag anlegen, damit Sie sofort informiert werden, wenn eine passende Immobilie in Ihrer Wunschregion verfügbar ist. Mit einem kostenlosen Suchauftrag über 50 Immobilienportale checken.
+                <p className="block mt-2 text-sm font-medium text-gray-700">
+                  Sie können hier auch einen Suchauftrag anlegen, damit Sie sofort informiert
+                  werden, wenn eine passende Immobilie in Ihrer Wunschregion verfügbar ist. Mit
+                  einem kostenlosen Suchauftrag über 50 Immobilienportale checken.
                 </p>
                 <div className="mt-4">
-                 <a
+                  <a
                     href="https://meineimmosuche.de/metin-calis"
                     target="_blank"
                     className="inline-flex self-end justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm baufilead_konditionsrechner lg:w-1/5 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
@@ -301,12 +307,12 @@ function Page({ data }) {
             <div className="flex mt-8 lg:mt-0 lg:flex-shrink-0">
               <div className="inline-flex rounded-md shadow" />
               <div className="inline-flex ml-3 rounded-md shadow">
-                <button
-                  type="button"
+                <Link
+                  to="/kontakt/"
                   className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm baufilead_konditionsrechner ring-offset-gray-800 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                 >
                   {page.cta.button}
-                </button>
+                </Link>
               </div>
             </div>
           </div>

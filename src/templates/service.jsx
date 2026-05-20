@@ -13,7 +13,7 @@ function Page({ data }) {
 
   useEffect(() => {
     // eslint-disable-next-line
-    const doc = document
+    const doc = document;
     if (doc.getElementById('baufi-lead-script')) {
       doc.getElementById('baufi-lead-script').remove();
     }
@@ -40,35 +40,27 @@ function Page({ data }) {
           src="https://www.baufi-lead.de/baufilead/partner/dvvEderFNPvzhryAcDJwqVsqxpCjmC/imports.js"
         />
       </Helmet>
-      <div className="pb-16 pt-32 bg-gray-50 overflow-hidden" style={{ minHeight: '75vh' }}>
-        <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
-          <div className="text-base max-w-prose mx-auto lg:max-w-none">
-            <p className="text-base text-blue-800 font-semibold tracking-wide uppercase">
+      <div className="pt-32 pb-16 overflow-hidden bg-gray-50" style={{ minHeight: '75vh' }}>
+        <div className="px-4 mx-auto space-y-8 max-w-7xl sm:px-6 lg:px-8">
+          <div className="mx-auto text-base max-w-prose lg:max-w-none">
+            <p className="text-base font-semibold tracking-wide text-blue-800 uppercase">
               {service.category}
             </p>
-            <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <h1 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
               {service.title}
             </h1>
           </div>
-          <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
+          <div className="relative z-10 mx-auto text-base max-w-prose lg:max-w-5xl lg:mx-0 lg:pr-72">
             <p className="text-lg text-gray-500">{service.description}</p>
           </div>
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
             <div className="relative z-10">
               <div
-                className="prose prose-blue text-gray-500 mx-auto lg:max-w-none"
+                className="mx-auto prose text-gray-500 prose-blue lg:max-w-none"
                 // eslint-disable-next-line
                 dangerouslySetInnerHTML={{ __html: service.html }}
               />
-              <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none space-x-4">
-                {service.calcButton && (
-                  <PrimaryButtonB
-                    styleClass="ring-offset-gray-100"
-                    extraClass={service.calcButton.calculator}
-                  >
-                    {service.calcButton.text}
-                  </PrimaryButtonB>
-                )}
+              <div className="flex mx-auto mt-10 space-x-4 text-base max-w-prose lg:max-w-none">
                 {service.linkButton && (
                   <PrimaryButtonA
                     styleClass="ring-offset-gray-100"
@@ -80,7 +72,7 @@ function Page({ data }) {
                 )}
               </div>
             </div>
-            <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
+            <div className="relative mx-auto mt-12 text-base max-w-prose lg:mt-0 lg:max-w-none">
               <svg
                 className="absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
                 width="404"
@@ -133,15 +125,10 @@ export const query = graphql`
         title
         description
         category
-        calcButton {
-          text
-          calculator
-        }
         linkButton {
           text
           link
         }
-        calculator
       }
       html
     }
