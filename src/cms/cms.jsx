@@ -3,7 +3,6 @@ import CMS, { init } from 'netlify-cms-app';
 import { de } from 'netlify-cms-locales';
 import page from './page/index';
 import article from './article/index';
-import calculator from './calculator/index';
 import setting from './setting/index';
 import service from './service/index';
 
@@ -34,6 +33,6 @@ init({
     // See https://www.netlifycms.org/docs/beta-features/#manual-initialization
     load_config_file: false,
     // See https://www.netlifycms.org/docs/collection-types/
-    collections: [page, service, article, calculator, setting],
+    collections: [page, service, article, setting],
   },
 });
